@@ -124,22 +124,4 @@ interface VirtualMachineInstances {
     VirtualMachineInstance,
     void
   >;
-  /** Creates a checkpoint in virtual machine instance. */
-  @summary("Implements the operation to creates a checkpoint in a virtual machine instance.")
-  createCheckpoint is ArmResourceActionNoResponseContentAsync<
-    VirtualMachineInstance,
-    VirtualMachineCreateCheckpoint
-  >;
-  /** Deletes a checkpoint in virtual machine instance. */
-  @summary("Implements the operation to delete a checkpoint in a virtual machine instance.")
-  deleteCheckpoint is ArmResourceActionNoResponseContentAsync<
-    VirtualMachineInstance,
-    VirtualMachineDeleteCheckpoint
-  >;
-  /** Restores to a checkpoint in virtual machine instance. */
-  @summary("Implements the operation to restores to a checkpoint in a virtual machine instance.")
-  restoreCheckpoint is ArmResourceActionNoResponseContentAsync<
-    VirtualMachineInstance,
-    VirtualMachineRestoreCheckpoint
-  >;
 }
